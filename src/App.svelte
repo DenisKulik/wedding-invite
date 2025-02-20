@@ -1,11 +1,13 @@
 <script>
 import './app.css'
 import Home from './components/Home.svelte'
+import Carousel from './components/Carousel.svelte'
 </script>
 
-<main class="w-screen h-screen flex justify-center bg-amber-50">
-  <div class="container pt-20 p-4">
+<main class="w-screen min-h-screen flex justify-center bg-amber-50">
+  <div class="container p-4">
     <Home />
+    <Carousel />
   </div>
 </main>
 
