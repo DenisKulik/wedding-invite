@@ -10,7 +10,7 @@ const firstDayOffset = 4
     18 августа 2025 <br />15:00
   </p>
 
-  <div class="max-w-96 w-full bg-neutral-50 p-4 shadow-lg rounded-lg">
+  <div class="max-w-96 w-full mb-10 bg-neutral-50 p-4 shadow-lg rounded-lg">
     <div class="grid grid-cols-7 gap-1 text-gray-700">
       <!-- Заголовки дней недели -->
       {#each ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'] as day}

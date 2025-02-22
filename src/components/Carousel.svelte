@@ -10,7 +10,7 @@ const photos = [photo1, photo4, photo2, photo3]
 
 <section class="w-full flex flex-col justify-center items-center mb-28">
   <p class="mb-5 text-3xl text-center">А это мы сейчас!</p>
-  <div class="w-96">
+  <div class="max-w-96 w-100%">
     <Carousel
       autoplay={true}
       infinite={true}

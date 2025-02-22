@@ -17,14 +17,22 @@ import weddingRing from '../assets/wedding-ring.png'
     <div
       class="bg-white p-4 shadow-lg rounded-lg border w-52 transform -rotate-6"
     >
-      <img src={denisPhoto} alt="Дениска" class="w-full h-auto rounded-lg" />
+      <img
+        src={denisPhoto}
+        alt="Дениска"
+        class="w-full min-h-44 h-auto rounded-lg"
+      />
       <p class="text-center text-lg font-handwriting mt-2">Дениска</p>
     </div>
 
     <div
       class="bg-white p-4 shadow-lg rounded-lg border w-52 transform rotate-6 translate-y-28"
     >
-      <img src={annaPhoto} alt="Анечка" class="w-full h-auto rounded-lg" />
+      <img
+        src={annaPhoto}
+        alt="Анечка"
+        class="w-full min-h-44 h-auto rounded-lg"
+      />
       <p class="text-center text-lg font-handwriting mt-2">Анечка</p>
     </div>
   </div>
@@ -32,7 +40,7 @@ import weddingRing from '../assets/wedding-ring.png'
   <h2 class="mb-7 text-center text-4xl font-handwriting">
     Узнаете этих малышей?
   </h2>
-  <div class="text-center text-2xl text-gray-500">
+  <div class="max-w-96 text-center text-2xl text-gray-500">
     <p class="mb-5">
       Да-да, это мы! Время пролетело очень быстро, представляете?
     </p>
