@@ -5,7 +5,9 @@ import dove from '../assets/dove.png'
 import weddingRing from '../assets/wedding-ring.png'
 </script>
 
-<section class="flex flex-col items-center mb-28 pt-24">
+<section
+  class="flex flex-col items-center min-h-screen mb-10 pt-24 overflow-hidden"
+>
   <div class="w-96 relative flex items-center justify-center mb-44">
     <img src={dove} alt="dove" class="absolute w-28 top-0 right-4" />
     <img
@@ -37,10 +39,10 @@ import weddingRing from '../assets/wedding-ring.png'
     </div>
   </div>
 
-  <h2 class="mb-7 text-center text-4xl font-handwriting">
+  <h2 class="mb-7 text-center text-3xl font-handwriting">
     Узнаете этих малышей?
   </h2>
-  <div class="max-w-96 text-center text-2xl text-gray-500">
+  <div class="max-w-96 text-center text-xl text-gray-500">
     <p class="mb-5">
       Да-да, это мы! Время пролетело очень быстро, представляете?
     </p>
