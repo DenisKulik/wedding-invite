@@ -8,7 +8,7 @@ import photo4 from '../assets/photo-4.webp'
 const photos = [photo1, photo4, photo2, photo3]
 </script>
 
-<section class="w-full flex flex-col justify-center items-center mb-10">
+<section class="w-full flex flex-col justify-center items-center mb-10 p-2">
   <p class="mb-5 text-3xl text-center">А это мы сейчас!</p>
   <div class="max-w-96 w-100%">
     <Carousel
