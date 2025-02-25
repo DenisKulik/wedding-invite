@@ -30,33 +30,37 @@ onMount(() => {
 })
 </script>
 
-<section class="relative min-h-96 flex flex-col items-center justify-center">
+<section class="flex justify-center">
   <div
-    class="absolute inset-0 bg-cover bg-center opacity-50"
-    style="background-image: url({hands});"
-  ></div>
+    class="flex flex-col items-center justify-center w-full min-h-96 relative p-2"
+  >
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-50"
+      style="background-image: url({hands});"
+    ></div>
 
-  <div class="relative z-10 text-center">
-    <h1 class="text-2xl md:text-5xl font-bold mb-10">
-      До встречи в августе через:
-    </h1>
+    <div class="relative max-w-96 z-10 text-center">
+      <h1 class="text-2xl md:text-5xl font-bold mb-10">
+        До встречи в августе через:
+      </h1>
 
-    <div class="max-w-96 w-full flex gap-4 text-2xl md:text-4xl font-mono">
-      <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
-        <span>{timeLeft.days}</span>
-        <p class="text-sm md:text-lg">Дней</p>
-      </div>
-      <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
-        <span>{timeLeft.hours}</span>
-        <p class="text-sm md:text-lg">Часов</p>
-      </div>
-      <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
-        <span>{timeLeft.minutes}</span>
-        <p class="text-sm md:text-lg">Минут</p>
-      </div>
-      <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
-        <span>{timeLeft.seconds}</span>
-        <p class="text-sm md:text-lg">Секунд</p>
+      <div class="flex gap-4 text-2xl md:text-4xl font-mono">
+        <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
+          <span>{timeLeft.days}</span>
+          <p class="text-sm md:text-lg">Дней</p>
+        </div>
+        <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
+          <span>{timeLeft.hours}</span>
+          <p class="text-sm md:text-lg">Часов</p>
+        </div>
+        <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
+          <span>{timeLeft.minutes}</span>
+          <p class="text-sm md:text-lg">Минут</p>
+        </div>
+        <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
+          <span>{timeLeft.seconds}</span>
+          <p class="text-sm md:text-lg">Секунд</p>
+        </div>
       </div>
     </div>
   </div>

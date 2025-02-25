@@ -1,5 +1,9 @@
 <script>
+import { inview } from 'svelte-inview'
 import house from '../assets/house.webp'
+import AnimatedContainer from './AnimatedContainer.svelte'
+
+let inView = false
 
 let map
 
@@ -13,12 +17,18 @@ DG.then(function () {
 })
 </script>
 
-<section class="flex flex-col justify-center items-center mb-10">
-  <h2 class="text-3xl font-bold text-gray-800 mb-5">Локация</h2>
-  <img src={house} alt="house" class="max-w-96 w-full mb-5 object-cover" />
-  <p class="max-w-96 text-l text-center italic mb-5">
-    База отдыха «Пасека», Деревня Старый Шалай, 1 Юргинский муниципальный округ,
-    Кемеровская область
-  </p>
-  <div id="map" class="w-full max-w-96 h-52"></div>
+<section
+  class="flex flex-col justify-center items-center mb-10"
+  use:inview={{ unobserveOnEnter: true, rootMargin: '-10%' }}
+  on:change={({ detail }) => (inView = detail.inView)}
+>
+  <AnimatedContainer {inView}>
+    <h2 class="text-3xl text-center font-bold text-gray-800 mb-5">Локация</h2>
+    <img src={house} alt="house" class="max-w-96 w-full mb-5 object-cover" />
+    <p class="max-w-96 text-l text-center italic mb-5">
+      База отдыха «Пасека», Деревня Старый Шалай, 1 Юргинский муниципальный
+      округ, Кемеровская область
+    </p>
+    <div id="map" class="w-full max-w-96 h-52"></div>
+  </AnimatedContainer>
 </section>
