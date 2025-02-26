@@ -40,26 +40,24 @@ onMount(() => {
     ></div>
 
     <div class="relative max-w-96 z-10 text-center">
-      <h1 class="text-2xl md:text-5xl font-bold mb-10">
-        До встречи в августе через:
-      </h1>
+      <h3 class="text-3xl md:text-5xl mb-10">До встречи в августе через:</h3>
 
-      <div class="flex gap-4 text-2xl md:text-4xl font-mono">
+      <div class="flex gap-4 text-3xl md:text-4xl">
         <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
           <span>{timeLeft.days}</span>
-          <p class="text-sm md:text-lg">Дней</p>
+          <p class="text-lg">Дней</p>
         </div>
         <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
           <span>{timeLeft.hours}</span>
-          <p class="text-sm md:text-lg">Часов</p>
+          <p class="text-lg">Часов</p>
         </div>
         <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
           <span>{timeLeft.minutes}</span>
-          <p class="text-sm md:text-lg">Минут</p>
+          <p class="text-lg">Минут</p>
         </div>
         <div class="p-4 bg-neutral-50 bg-opacity-50 rounded-lg">
           <span>{timeLeft.seconds}</span>
-          <p class="text-sm md:text-lg">Секунд</p>
+          <p class="text-lg">Секунд</p>
         </div>
       </div>
     </div>

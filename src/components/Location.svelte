@@ -23,9 +23,9 @@ DG.then(function () {
   on:change={({ detail }) => (inView = detail.inView)}
 >
   <AnimatedContainer {inView}>
-    <h2 class="text-3xl text-center font-bold text-gray-800 mb-5">Локация</h2>
+    <h2 class="text-4xl text-center font-bold text-gray-800 mb-5">Локация</h2>
     <img src={house} alt="house" class="max-w-96 w-full mb-5 object-cover" />
-    <p class="max-w-96 text-l text-center italic mb-5">
+    <p class="max-w-96 text-xl text-center italic mb-5">
       База отдыха «Пасека», Деревня Старый Шалай, 1 Юргинский муниципальный
       округ, Кемеровская область
     </p>

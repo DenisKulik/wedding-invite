@@ -4,10 +4,9 @@ import { inview } from 'svelte-inview'
 import AnimatedContainer from './AnimatedContainer.svelte'
 import photo1 from '../assets/photo-1.webp'
 import photo2 from '../assets/photo-2.webp'
-import photo3 from '../assets/photo-3.webp'
 import photo4 from '../assets/photo-4.webp'
 
-const photos = [photo1, photo4, photo2, photo3]
+const photos = [photo1, photo4, photo2]
 let inView = false
 </script>
 
@@ -17,7 +16,7 @@ let inView = false
   on:change={({ detail }) => (inView = detail.inView)}
 >
   <AnimatedContainer {inView}>
-    <p class="mb-5 text-3xl text-center">А это мы сейчас!</p>
+    <h2 class="mb-5 text-4xl text-center">А это мы сейчас!</h2>
 
     <div class="max-w-96 w-100%">
       <Carousel

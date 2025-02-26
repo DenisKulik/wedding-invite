@@ -8,16 +8,16 @@ let inView = false
 </script>
 
 <section
-  class="flex flex-col items-center text-center"
+  class="text-center"
   use:inview={{ unobserveOnEnter: true, rootMargin: '-10%' }}
   on:change={({ detail }) => (inView = detail.inView)}
 >
   <AnimatedContainer {inView}>
-    <h2 class="text-3xl font-bold text-gray-800 mb-5">
+    <h2 class="text-4xl font-bold text-gray-800 mb-5">
       Дата и время проведения
     </h2>
 
-    <p class="text-xl font-bold text-gray-800 mb-2">
+    <p class="text-2xl font-bold text-gray-800 mb-2">
       18 августа 2025 <br />15:00
     </p>
 
