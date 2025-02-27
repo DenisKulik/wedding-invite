@@ -1,10 +1,10 @@
 <script>
 import './app.css'
-import Home from './components/Home.svelte'
-import Carousel from './components/Carousel.svelte'
-import EventDetails from './components/EventDetails.svelte'
-import Location from './components/Location.svelte'
-import Footer from './components/Footer.svelte'
+import Home from './sections/Home.svelte'
+import Carousel from './sections/Gallery.svelte'
+import EventDetails from './sections/EventDetails.svelte'
+import Location from './sections/Location.svelte'
+import Footer from './sections/Footer.svelte'
 </script>
 
 <main class="w-screen min-h-screen flex justify-center bg-amber-50">
