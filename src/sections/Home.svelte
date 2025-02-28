@@ -47,17 +47,19 @@ onMount(() => {
     </div>
   </Container>
 
-  <div class="text-center" transition:fade={{ duration: 1000, delay: 500 }}>
-    <Heading>Узнаете этих малышей?</Heading>
-    <div class="text-2xl text-gray-600">
-      <p class="mb-2">
-        Да-да, это мы! Время пролетело очень быстро, представляете?
-      </p>
-      <p>Мы рады пригласить Вас на торжество по случаю нашей свадьбы</p>
-    </div>
-  </div>
+  <div transition:fade={{ duration: 1000, delay: 500 }}>
+    <Container class="text-center">
+      <Heading>Узнаете этих малышей?</Heading>
+      <div class="text-2xl text-gray-600">
+        <p class="mb-2">
+          Да-да, это мы! Время пролетело очень быстро, представляете?
+        </p>
+        <p>Мы рады пригласить Вас на торжество по случаю нашей свадьбы</p>
+      </div>
+    </Container>
 
-  {#if showArrow}
-    <ScrollArrow />
-  {/if}
+    {#if showArrow}
+      <ScrollArrow />
+    {/if}
+  </div>
 </section>
