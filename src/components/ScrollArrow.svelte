@@ -1,4 +1,4 @@
-<div class="absolute bottom-8 left-1/2 -ml-5 animate-bounce">
+<div class="absolute bottom-6 left-1/2 -ml-5 animate-bounce">
   <svg
     class="w-10 h-10 text-gray-400"
     xmlns="http://www.w3.org/2000/svg"
