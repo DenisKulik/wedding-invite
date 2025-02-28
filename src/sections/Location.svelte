@@ -3,19 +3,9 @@ import { inview } from 'svelte-inview'
 import house from '../assets/house.webp'
 import AnimatedContainer from '../components/AnimatedContainer.svelte'
 import Heading from '../components/Heading.svelte'
+import Container from '../components/Container.svelte'
 
 let inView = false
-
-let map
-
-DG.then(function () {
-  map = DG.map('map', {
-    center: [55.591868, 84.871967],
-    zoom: 11,
-  })
-
-  DG.marker([55.591868, 84.871967]).addTo(map)
-})
 </script>
 
 <section
@@ -30,6 +20,13 @@ DG.then(function () {
       База отдыха «Пасека», Деревня Старый Шалай, 1 Юргинский муниципальный
       округ, Кемеровская область
     </p>
-    <div id="map" class="w-full max-w-96 h-52"></div>
+    <Container class="flex justify-center">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed617a264a76a0a32ca4fd9039bcd1102e877753d20d323e7a3a982b6ec292aa&amp;source=constructor"
+        width="100%"
+        height="300"
+        frameborder="0"
+      ></iframe>
+    </Container>
   </AnimatedContainer>
 </section>

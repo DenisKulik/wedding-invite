@@ -24,7 +24,7 @@ onMount(() => {
 </script>
 
 <section
-  class="flex flex-col items-center min-h-screen mb-10 pt-24 overflow-hidden relative"
+  class="flex flex-col items-center min-h-screen mb-10 pt-4 overflow-hidden relative"
   bind:clientHeight={sectionHeight}
 >
   <Container class="relative flex items-center justify-center mb-44">
